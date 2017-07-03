@@ -1,0 +1,32 @@
+﻿@using GtuUniversity.Utilities;
+<nav class="navbar navbar-toggleable-md custom-nav fixed-top bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">
+        <img src="~/images/logogtu.png" class="img-fluid nav-logo" alt="gtu logo" />
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+            <li class="nav-item @Utilities.IsActive("Home", "Index")">
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="nav-link">მთავარი</a>
+            </li>
+            <li class="nav-item">
+                <a asp-area="" asp-controller="Home" asp-action="About" class="nav-link">ჩვენს შესახებ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">სტუდენტები</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">ლექტორები</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">კურსები</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">კათედრები</a>
+            </li>
+        </ul>
+    </div>
+</nav>
