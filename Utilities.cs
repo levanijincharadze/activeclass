@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.ViewFeatures;
+//in your project create file "Utilities", under your Utilities file create class "Utilities.cs". 
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ namespace GtuUniversity.Utilities
 {
     public static class Utilities
     {
-        public static string IsActive(HtmlHelper html,
+        public static string IsActive(this HtmlHelper html,
                                   string control,
                                   string action)
         {
